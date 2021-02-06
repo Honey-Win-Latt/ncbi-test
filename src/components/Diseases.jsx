@@ -118,7 +118,7 @@ export default class Diseases extends Component {
     let years = [];
     try {
       for (let i = 0; i < rawData.length; i++) {
-        // There are some output where years are undefined. So to prevent error, added 0
+        // There are some output from server where years are undefined. So to prevent error, added 0
         let yearObj =
           rawData[i]["MedlineCitation"][0]["Article"][0]["Journal"][0][
             "JournalIssue"
